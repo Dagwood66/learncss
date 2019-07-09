@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function $$(selector, context) {
+        context = context || document;
+        let nodeList = context.querySelectorAll(selector);
+        return Array.prototype.splice.call(nodeList);
+    }
+</script>
+</body>
+</html>
