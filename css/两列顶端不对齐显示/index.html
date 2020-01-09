@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>左列下边距与右列上边距相等</title>
+    <style>
+        body, div, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+            background-color: aquamarine;
+        }
+    </style>
+    <style>
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            padding: 0 1vw;
+        }
+
+        li {
+            box-sizing: border-box;
+
+            margin: 0.5vw 0;
+            padding: 1vw;
+            width: 49.5%;
+            height: 100px;
+        }
+
+        ul > li:nth-child(even) {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+</ul>
+</body>
+</html>

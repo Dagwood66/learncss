@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>下划线.html</title>
+    <style>
+        p, div {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        .line-through {
+            position: relative;
+            display: inline-block;
+        }
+
+        .line-through:before {
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 50%;
+
+            content: " ";
+            width: auto;
+            border-top: 1px solid #000000;
+
+            transform: translateY(-50%);
+        }
+    </style>
+</head>
+<body>
+<p style="text-decoration:none">无</p>
+<p style="text-decoration:line-through">中划线</p>
+<p style="text-decoration:overline">上划线</p>
+<p style="text-decoration:underline">下划线</p>
+<div>
+    <p class="line-through">不同大小文字中<span style="font-size: 14px;">划线</span>(只可用于单行文本)</p>
+</div>
+</body>
+</html>

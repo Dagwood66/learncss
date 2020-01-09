@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>两列上下相差距离</title>
+    <style>
+        body, div, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+            background-color: aquamarine;
+        }
+    </style>
+    <style>
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            padding: 0 1vw;
+            padding-top: 50px;
+        }
+
+        li {
+            box-sizing: border-box;
+
+            padding: 1vw;
+            width: 49.5%;
+            height: 100px;
+        }
+
+        ul > li:nth-child(odd) {
+            margin-top: -50px; /*两列上下相差距离*/
+            margin-bottom: 10px;
+        }
+
+        ul > li:nth-child(even) {
+            margin-bottom: 10px;
+        }
+
+        ul > li:nth-child(1) {
+            margin-top: 0px;
+        }
+
+        ul > li:nth-child(2) {
+            margin-top: 50px; /*两列上下相差距离*/
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+    <li>7</li>
+    <li>8</li>
+    <li>9</li>
+    <li>10</li>
+</ul>
+</body>
+</html>
