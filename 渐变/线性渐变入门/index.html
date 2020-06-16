@@ -3,8 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        .list {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .item {
+            margin: 10px;
+        }
+
+        .gradient {
+            margin: 0 auto;
+            height: 200px;
+            width: 200px;
+        }
+
+        .gradient-1 {
+            background-image: linear-gradient(blue, red);
+        }
+
+        .gradient-2 {
+            background-image: linear-gradient(blue, green, red);
+        }
+
+        .gradient-3 {
+            background-image: linear-gradient(blue, red);
+        }
+
+        .gradient-4 {
+            background-image: linear-gradient(45deg, red, blue);
+        }
+
+        .gradient-5 {
+            background-image: linear-gradient(45deg, blue, red);
+        }
+
+        .gradient-6 {
+            background-image: linear-gradient(120deg, red, blue);
+        }
+
+        .gradient-7 {
+            background-image: linear-gradient(red 70%, blue 100%);
+        }
+
+        .gradient-8 {
+            background-image: linear-gradient(red 40%, yellow 30%, blue 65%);
+        }
+    </style>
 </head>
 <body>
+<div>
+    <div>基本渐变</div>
+    <div class="list">
+        <div class="item">
+            <div class="gradient gradient-1"></div>
+            <div>双色渐变</div>
+            <div>linear-gradient(blue, red)</div>
+        </div>
 
+        <div class="item">
+            <div class="gradient gradient-2"></div>
+            <div>多色渐变</div>
+            <div>linear-gradient(blue, green, red)</div>
+        </div>
+    </div>
+</div>
+<div>
+    <div>不同方向渐变-顺时针计算角度</div>
+    <div>方式1：to (left|right) (bottom|top) 颜色正序</div>
+    <div>方式2：0deg 颜色倒序</div>
+    <div class="list">
+        <div class="item">
+            <div class="gradient gradient-3"></div>
+            <div>上到下</div>
+            <div>linear-gradient(blue, red)</div>
+        </div>
+        <div class="item">
+            <div class="gradient gradient-4"></div>
+            <div>45度渐变-方式1</div>
+            <div>linear-gradient(45deg, red, blue)</div>
+        </div>
+        <div class="item">
+            <div class="gradient gradient-5"></div>
+            <div>45度渐变-方式2</div>
+            <div>linear-gradient(45deg, blue, red)</div>
+        </div>
+        <div class="item">
+            <div class="gradient gradient-6"></div>
+            <div>120度渐变</div>
+            <div>linear-gradient(120deg, red, blue)</div>
+        </div>
+    </div>
+</div>
+<div>
+    <div>可选比例渐变</div>
+    <div class="list">
+        <div class="item">
+            <div class="gradient gradient-7"></div>
+            <div>增长比例渐变</div>
+            <div>linear-gradient(red 70%, blue 100%)</div>
+        </div>
+        <div class="item">
+            <div class="gradient gradient-8"></div>
+            <div>断点比例渐变</div>
+            <div>linear-gradient(red 40%, yellow 30%, blue 65%);</div>
+        </div>
+    </div>
+</div>
 </body>
 </html>
